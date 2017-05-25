@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SmoketestingScenarios">
+  <test name="Sprint1-SmokeTestcases">
+    <classes>
+      <class name="seleniumcommandspack.Refreshpage"/>
+      <class name="seleniumcommandspack.VerifyPageTitle"/>
+      <class name="seleniumcommandspack.DesiredcapabilityHandling"/>
+    </classes>
+  </test> <!-- Sprint1-SmokeTestcases -->
+</suite> <!-- SmoketestingScenarios -->

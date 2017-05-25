@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    
+  <test name="Sprint2 Testing Groups">
+      
+      <groups>
+          
+          <run>
+              
+              <include name = "smokeTC" />
+              <exclude name = "RegressionTC" />
+              
+              
+          </run>
+          
+      </groups>
+      
+    <classes>
+      <class name="seleniumcommandspack.GroupingTestcases"/>
+    </classes>
+    
+  </test> <!-- Test -->
+  
+  
+  
+  
+</suite> <!-- Suite -->
