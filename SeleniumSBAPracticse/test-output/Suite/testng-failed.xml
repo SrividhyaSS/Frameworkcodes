@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="browser" value="ie"/>
+  <test name="Test with Chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="seleniumautomation.TC001">
+        <methods>
+          <include name="browserinitalisation"/>
+          <include name="browserinitalisation"/>
+          <include name="clickonpage"/>
+          <include name="SimpleDemo"/>
+        </methods>
+      </class> <!-- seleniumautomation.TC001 -->
+    </classes>
+  </test> <!-- Test with Chrome(failed) -->
+  <test name="Test with IE(failed)">
+    <parameter name="browser" value="ie"/>
+    <classes>
+      <class name="seleniumautomation.TC001">
+        <methods>
+          <include name="browserinitalisation"/>
+          <include name="browserinitalisation"/>
+          <include name="clickonpage"/>
+          <include name="SimpleDemo"/>
+        </methods>
+      </class> <!-- seleniumautomation.TC001 -->
+    </classes>
+  </test> <!-- Test with IE(failed) -->
+</suite> <!-- Failed suite [Suite] -->
