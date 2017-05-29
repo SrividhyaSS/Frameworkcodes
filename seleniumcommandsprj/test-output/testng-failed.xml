@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
-  <parameter name="browser" value="ie"/>
-  <test name="Test with IE(failed)">
-    <parameter name="browser" value="ie"/>
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
       <class name="configpackage.SimpleTestexe">
         <methods>
-          <include name="BrowserClose"/>
-          <include name="Browserinitialisation"/>
-          <include name="Browserinitialisation"/>
           <include name="Verifypagetile"/>
         </methods>
       </class> <!-- configpackage.SimpleTestexe -->
     </classes>
-  </test> <!-- Test with IE(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -10,7 +10,7 @@ import org.testng.annotations.AfterClass;
 public class BaseClassforBrowserHandling {
  
 	WebDriver driver;
-	ConfigReader config = new ConfigReader();
+	ConfigReader config = new ConfigReader(driver);
   
   @BeforeClass
   @Parameters ("browser")

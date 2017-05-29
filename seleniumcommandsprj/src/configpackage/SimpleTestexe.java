@@ -8,8 +8,20 @@ public class SimpleTestexe extends BaseClassforBrowserHandling
   
   public void Verifypagetile () 
   {
-	  
-	 String title =  driver.getTitle();
+		
+	
+	  String title =  driver.getTitle();
 	  System.out.println("print the page title : " +title);
+	  new  ConfigReader (driver)
+	  .Login("academy", "academy");
+	 
+	
+	 
+	  
+	
+	  
+	  
+	  
+	  
   }
 }

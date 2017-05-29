@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="33309" started-at="2017-05-24T10:59:24Z" finished-at="2017-05-24T10:59:58Z">
+  <suite name="Suite" duration-ms="27692" started-at="2017-05-29T09:11:01Z" finished-at="2017-05-29T09:11:28Z">
     <groups>
     </groups>
-    <test name="Test with chrome" duration-ms="11337" started-at="2017-05-24T10:59:24Z" finished-at="2017-05-24T10:59:36Z">
+    <test name="Test with chrome" duration-ms="12602" started-at="2017-05-29T09:11:01Z" finished-at="2017-05-29T09:11:13Z">
       <class name="configpackage.SimpleTestexe">
-        <test-method status="PASS" signature="Browserinitialisation(java.lang.String)[pri:0, instance:configpackage.SimpleTestexe@18355a8]" name="Browserinitialisation" is-config="true" duration-ms="10014" started-at="2017-05-24T16:29:24Z" finished-at="2017-05-24T16:29:34Z">
+        <test-method status="PASS" signature="Browserinitialisation(java.lang.String)[pri:0, instance:configpackage.SimpleTestexe@18355a8]" name="Browserinitialisation" is-config="true" duration-ms="7075" started-at="2017-05-29T14:41:01Z" finished-at="2017-05-29T14:41:08Z">
           <params>
             <param index="0">
               <value>
@@ -18,19 +18,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Browserinitialisation -->
-        <test-method status="PASS" signature="Verifypagetile()[pri:0, instance:configpackage.SimpleTestexe@18355a8]" name="Verifypagetile" duration-ms="14" started-at="2017-05-24T16:29:34Z" finished-at="2017-05-24T16:29:34Z">
+        <test-method status="PASS" signature="Verifypagetile()[pri:0, instance:configpackage.SimpleTestexe@18355a8]" name="Verifypagetile" duration-ms="3744" started-at="2017-05-29T14:41:08Z" finished-at="2017-05-29T14:41:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verifypagetile -->
-        <test-method status="PASS" signature="BrowserClose()[pri:0, instance:configpackage.SimpleTestexe@18355a8]" name="BrowserClose" is-config="true" duration-ms="1295" started-at="2017-05-24T16:29:34Z" finished-at="2017-05-24T16:29:36Z">
+        <test-method status="PASS" signature="BrowserClose()[pri:0, instance:configpackage.SimpleTestexe@18355a8]" name="BrowserClose" is-config="true" duration-ms="1768" started-at="2017-05-29T14:41:12Z" finished-at="2017-05-29T14:41:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserClose -->
       </class> <!-- configpackage.SimpleTestexe -->
     </test> <!-- Test with chrome -->
-    <test name="Test with IE" duration-ms="21915" started-at="2017-05-24T10:59:36Z" finished-at="2017-05-24T10:59:58Z">
+    <test name="Test with IE" duration-ms="15050" started-at="2017-05-29T09:11:13Z" finished-at="2017-05-29T09:11:28Z">
       <class name="configpackage.SimpleTestexe">
-        <test-method status="PASS" signature="Browserinitialisation(java.lang.String)[pri:0, instance:configpackage.SimpleTestexe@8e7350]" name="Browserinitialisation" is-config="true" duration-ms="20769" started-at="2017-05-24T16:29:36Z" finished-at="2017-05-24T16:29:57Z">
+        <test-method status="PASS" signature="Browserinitialisation(java.lang.String)[pri:0, instance:configpackage.SimpleTestexe@8e7350]" name="Browserinitialisation" is-config="true" duration-ms="5751" started-at="2017-05-29T14:41:13Z" finished-at="2017-05-29T14:41:19Z">
           <params>
             <param index="0">
               <value>
@@ -41,11 +41,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Browserinitialisation -->
-        <test-method status="PASS" signature="Verifypagetile()[pri:0, instance:configpackage.SimpleTestexe@8e7350]" name="Verifypagetile" duration-ms="40" started-at="2017-05-24T16:29:57Z" finished-at="2017-05-24T16:29:57Z">
+        <test-method status="PASS" signature="Verifypagetile()[pri:0, instance:configpackage.SimpleTestexe@8e7350]" name="Verifypagetile" duration-ms="8229" started-at="2017-05-29T14:41:19Z" finished-at="2017-05-29T14:41:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verifypagetile -->
-        <test-method status="PASS" signature="BrowserClose()[pri:0, instance:configpackage.SimpleTestexe@8e7350]" name="BrowserClose" is-config="true" duration-ms="1104" started-at="2017-05-24T16:29:57Z" finished-at="2017-05-24T16:29:58Z">
+        <test-method status="PASS" signature="BrowserClose()[pri:0, instance:configpackage.SimpleTestexe@8e7350]" name="BrowserClose" is-config="true" duration-ms="1070" started-at="2017-05-29T14:41:27Z" finished-at="2017-05-29T14:41:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserClose -->
