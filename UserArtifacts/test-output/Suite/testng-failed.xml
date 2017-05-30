@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="browser" value="ie"/>
+  <listeners>
+    <listener class-name="framestest.ListenerinTestNG"/>
+  </listeners>
+  <test name="Test in Chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="runs.LoginTest">
+        <methods>
+          <include name="browserclose"/>
+          <include name="browserclose"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="browserinitialisation"/>
+          <include name="browserinitialisation"/>
+        </methods>
+      </class> <!-- runs.LoginTest -->
+      <class name="runs.VerifyPageTitle">
+        <methods>
+          <include name="browserclose"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="browserinitialisation"/>
+          <include name="browserinitialisation"/>
+          <include name="VerifyPageTitleTC"/>
+        </methods>
+      </class> <!-- runs.VerifyPageTitle -->
+    </classes>
+  </test> <!-- Test in Chrome(failed) -->
+  <test name="Test in IE(failed)">
+    <parameter name="browser" value="ie"/>
+    <classes>
+      <class name="runs.LoginTest">
+        <methods>
+          <include name="browserclose"/>
+          <include name="browserclose"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="browserinitialisation"/>
+          <include name="browserinitialisation"/>
+        </methods>
+      </class> <!-- runs.LoginTest -->
+      <class name="runs.VerifyPageTitle">
+        <methods>
+          <include name="browserclose"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="browserinitialisation"/>
+          <include name="browserinitialisation"/>
+          <include name="VerifyPageTitleTC"/>
+        </methods>
+      </class> <!-- runs.VerifyPageTitle -->
+    </classes>
+  </test> <!-- Test in IE(failed) -->
+</suite> <!-- Failed suite [Suite] -->

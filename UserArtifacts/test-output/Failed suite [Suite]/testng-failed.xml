@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Suite]]">
+  <parameter name="browser" value="ie"/>
+  <listeners>
+    <listener class-name="frames.ListenerinTestNG"/>
+  </listeners>
+  <test name="Test in Chrome(failed)(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="runs.VerifyPageTitle">
+        <methods>
+          <include name="browserclose"/>
+          <include name="browserclose"/>
+          <include name="browserinitialisation"/>
+          <include name="browserinitialisation"/>
+          <include name="VerifyPageTitleTC"/>
+        </methods>
+      </class> <!-- runs.VerifyPageTitle -->
+    </classes>
+  </test> <!-- Test in Chrome(failed)(failed) -->
+  <test name="Test in IE(failed)(failed)">
+    <parameter name="browser" value="ie"/>
+    <classes>
+      <class name="runs.VerifyPageTitle">
+        <methods>
+          <include name="browserclose"/>
+          <include name="browserclose"/>
+          <include name="browserinitialisation"/>
+          <include name="browserinitialisation"/>
+          <include name="VerifyPageTitleTC"/>
+        </methods>
+      </class> <!-- runs.VerifyPageTitle -->
+    </classes>
+  </test> <!-- Test in IE(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->

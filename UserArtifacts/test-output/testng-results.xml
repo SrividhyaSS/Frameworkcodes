@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" total="6" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="49840" started-at="2017-05-30T11:41:17Z" finished-at="2017-05-30T11:42:07Z">
+    <groups>
+    </groups>
+    <test name="Test in Chrome" duration-ms="32925" started-at="2017-05-30T11:41:17Z" finished-at="2017-05-30T11:41:50Z">
+      <class name="runs.LoginTest">
+        <test-method status="PASS" signature="browserinitialisation(java.lang.String)[pri:0, instance:runs.LoginTest@4ed9f0]" name="browserinitialisation" is-config="true" duration-ms="6822" started-at="2017-05-30T17:11:17Z" finished-at="2017-05-30T17:11:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserinitialisation -->
+        <test-method status="PASS" signature="Loginintotheapplication()[pri:0, instance:runs.LoginTest@4ed9f0]" name="Loginintotheapplication" duration-ms="4686" started-at="2017-05-30T17:11:24Z" finished-at="2017-05-30T17:11:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Loginintotheapplication -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:runs.LoginTest@4ed9f0]" name="tearDown" is-config="true" duration-ms="4676" started-at="2017-05-30T17:11:28Z" finished-at="2017-05-30T17:11:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Loginintotheapplication status=SUCCESS method=LoginTest.Loginintotheapplication()[pri:0, instance:runs.LoginTest@4ed9f0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="browserclose()[pri:0, instance:runs.LoginTest@4ed9f0]" name="browserclose" is-config="true" duration-ms="1598" started-at="2017-05-30T17:11:33Z" finished-at="2017-05-30T17:11:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserclose -->
+      </class> <!-- runs.LoginTest -->
+      <class name="runs.VerifyPageTitle">
+        <test-method status="PASS" signature="browserinitialisation(java.lang.String)[pri:0, instance:runs.VerifyPageTitle@13b32d7]" name="browserinitialisation" is-config="true" duration-ms="6284" started-at="2017-05-30T17:11:35Z" finished-at="2017-05-30T17:11:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserinitialisation -->
+        <test-method status="PASS" signature="Loginintotheapplication()[pri:0, instance:runs.VerifyPageTitle@13b32d7]" name="Loginintotheapplication" duration-ms="3985" started-at="2017-05-30T17:11:41Z" finished-at="2017-05-30T17:11:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Loginintotheapplication -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:runs.VerifyPageTitle@13b32d7]" name="tearDown" is-config="true" duration-ms="2854" started-at="2017-05-30T17:11:45Z" finished-at="2017-05-30T17:11:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Loginintotheapplication status=SUCCESS method=LoginTest.Loginintotheapplication()[pri:0, instance:runs.VerifyPageTitle@13b32d7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="VerifyPageTitleTC()[pri:0, instance:runs.VerifyPageTitle@13b32d7]" name="VerifyPageTitleTC" duration-ms="134" started-at="2017-05-30T17:11:48Z" finished-at="2017-05-30T17:11:48Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at runs.VerifyPageTitle.VerifyPageTitleTC(VerifyPageTitle.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyPageTitleTC -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:runs.VerifyPageTitle@13b32d7]" name="tearDown" is-config="true" duration-ms="328" started-at="2017-05-30T17:11:48Z" finished-at="2017-05-30T17:11:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyPageTitleTC status=FAILURE method=VerifyPageTitle.VerifyPageTitleTC()[pri:0, instance:runs.VerifyPageTitle@13b32d7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="browserclose()[pri:0, instance:runs.VerifyPageTitle@13b32d7]" name="browserclose" is-config="true" duration-ms="1537" started-at="2017-05-30T17:11:48Z" finished-at="2017-05-30T17:11:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserclose -->
+      </class> <!-- runs.VerifyPageTitle -->
+    </test> <!-- Test in Chrome -->
+    <test name="Test in IE" duration-ms="16901" started-at="2017-05-30T11:41:50Z" finished-at="2017-05-30T11:42:07Z">
+      <class name="runs.LoginTest">
+        <test-method status="PASS" signature="browserinitialisation(java.lang.String)[pri:0, instance:runs.LoginTest@2a079c]" name="browserinitialisation" is-config="true" duration-ms="6005" started-at="2017-05-30T17:11:50Z" finished-at="2017-05-30T17:11:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ie]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserinitialisation -->
+        <test-method status="PASS" signature="Loginintotheapplication()[pri:0, instance:runs.LoginTest@2a079c]" name="Loginintotheapplication" duration-ms="2094" started-at="2017-05-30T17:11:56Z" finished-at="2017-05-30T17:11:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Loginintotheapplication -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:runs.LoginTest@2a079c]" name="tearDown" is-config="true" duration-ms="453" started-at="2017-05-30T17:11:58Z" finished-at="2017-05-30T17:11:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Loginintotheapplication status=SUCCESS method=LoginTest.Loginintotheapplication()[pri:0, instance:runs.LoginTest@2a079c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="browserclose()[pri:0, instance:runs.LoginTest@2a079c]" name="browserclose" is-config="true" duration-ms="989" started-at="2017-05-30T17:11:58Z" finished-at="2017-05-30T17:11:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserclose -->
+      </class> <!-- runs.LoginTest -->
+      <class name="runs.VerifyPageTitle">
+        <test-method status="PASS" signature="browserinitialisation(java.lang.String)[pri:0, instance:runs.VerifyPageTitle@1ec2012]" name="browserinitialisation" is-config="true" duration-ms="4733" started-at="2017-05-30T17:11:59Z" finished-at="2017-05-30T17:12:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ie]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserinitialisation -->
+        <test-method status="PASS" signature="Loginintotheapplication()[pri:0, instance:runs.VerifyPageTitle@1ec2012]" name="Loginintotheapplication" duration-ms="2049" started-at="2017-05-30T17:12:04Z" finished-at="2017-05-30T17:12:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Loginintotheapplication -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:runs.VerifyPageTitle@1ec2012]" name="tearDown" is-config="true" duration-ms="402" started-at="2017-05-30T17:12:06Z" finished-at="2017-05-30T17:12:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Loginintotheapplication status=SUCCESS method=LoginTest.Loginintotheapplication()[pri:0, instance:runs.VerifyPageTitle@1ec2012] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="VerifyPageTitleTC()[pri:0, instance:runs.VerifyPageTitle@1ec2012]" name="VerifyPageTitleTC" duration-ms="82" started-at="2017-05-30T17:12:07Z" finished-at="2017-05-30T17:12:07Z">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[Unable to get browser (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 78 milliseconds
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'PC238680', ip: '10.251.168.24', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:17651/, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: d1a4e8e6-3856-4358-a042-dd49c6220f6d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to get browser (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 78 milliseconds
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'PC238680', ip: '10.251.168.24', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:17651/, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: d1a4e8e6-3856-4358-a042-dd49c6220f6d
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:326)
+	at runs.VerifyPageTitle.VerifyPageTitleTC(VerifyPageTitle.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyPageTitleTC -->
+        <test-method status="FAIL" signature="tearDown(org.testng.ITestResult)[pri:0, instance:runs.VerifyPageTitle@1ec2012]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-05-30T17:12:07Z" finished-at="2017-05-30T17:12:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyPageTitleTC status=FAILURE method=VerifyPageTitle.VerifyPageTitleTC()[pri:0, instance:runs.VerifyPageTitle@1ec2012] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[Unable to get browser (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 17 milliseconds
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'PC238680', ip: '10.251.168.24', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:17651/, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: d1a4e8e6-3856-4358-a042-dd49c6220f6d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to get browser (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 17 milliseconds
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'PC238680', ip: '10.251.168.24', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:17651/, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: d1a4e8e6-3856-4358-a042-dd49c6220f6d
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:322)
+	at runs.LoginTest.tearDown(LoginTest.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="browserclose()[pri:0, instance:runs.VerifyPageTitle@1ec2012]" name="browserclose" is-config="true" duration-ms="0" started-at="2017-05-30T17:12:07Z" finished-at="2017-05-30T17:12:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserclose -->
+      </class> <!-- runs.VerifyPageTitle -->
+    </test> <!-- Test in IE -->
+  </suite> <!-- Suite -->
+</testng-results>
