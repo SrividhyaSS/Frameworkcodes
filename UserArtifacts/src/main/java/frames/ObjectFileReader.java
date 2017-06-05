@@ -14,7 +14,7 @@ public class ObjectFileReader
 		
 		try {
 			
-			File src = new File ("D:\\SeleniumPractice\\srividhya\\UserArtifacts\\objects.properties");
+			File src = new File ("D:\\GIT-codes\\UserArtifacts\\objects.properties");
 			FileInputStream fis = new FileInputStream (src);
 			pro=new Properties();
 			pro.load(fis);

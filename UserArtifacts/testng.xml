@@ -14,23 +14,12 @@
       
     <classes>
       <class name="runs.LoginTest"/>
-      <class name="runs.VerifyPageTitle"/>
-      
+     
     </classes>
     
     
   </test> <!-- Test -->
   
-  <test name="Test in IE">
-      
-      <parameter name = "browser" value = "ie" />
-      
-    <classes>
-      <class name="runs.LoginTest"/>
-      <class name="runs.VerifyPageTitle"/>
-    </classes>
-    
-    
-  </test> <!-- Test -->
+  
   
 </suite> <!-- Suite -->
