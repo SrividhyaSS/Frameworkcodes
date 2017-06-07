@@ -5,8 +5,12 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
+
+
 
 
 
@@ -32,7 +36,7 @@ public class TestBaseforBrowserlauch
 	 Methodforbrowser config = new Methodforbrowser();
 	  
 	 
-	  @BeforeClass
+	  @BeforeMethod
 	  @Parameters ("browser")
 	  public void browserinitialisation (String browsername) 
 	  {
@@ -64,12 +68,13 @@ public class TestBaseforBrowserlauch
 		  
 	  }
 
-	  @AfterClass
+	 @AfterMethod
 	  public void browserclose ()
 	  
 	  {
-		  report.flush();
+		  
 		  driver.quit();
+		  report.flush();
 		
 		 
 		  

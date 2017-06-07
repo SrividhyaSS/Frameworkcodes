@@ -10,7 +10,6 @@
     <classes>
       <class name="runs.LoginTest">
         <methods>
-          <include name="browserclose"/>
           <include name="Loginintotheapplication" invocation-numbers="1"/>
           <include name="browserinitialisation"/>
         </methods>

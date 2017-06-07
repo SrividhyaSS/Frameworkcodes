@@ -24,33 +24,35 @@ public class LoginTest extends TestBaseforBrowserlauch
 	  
 	  report = ExtentBaseClass.GetExtent();
 	  logger = report.startTest("Login", "Login-verification");
-	  logger.log(LogStatus.INFO, "Login", "verified with valid credentials"); 
+	 logger.log(LogStatus.INFO, "Login", "verified with valid credentials starts"); 
+	 
 	  new MethodsforLogin(driver)
 	 .Login(UID,PWD);
-	  Utilityclassfortakingscreenshot.TakingScreenShopts(driver, "LoginPage");
+	 // Utilityclassfortakingscreenshot.TakingScreenShopts(driver, "LoginPage");
+	  
 	  logger.log(LogStatus.INFO,"Login", "Login verification is successfull");
 	   report.endTest(logger);			  
   }
   
-  @Test 
+ /* @Test 
   
   public void titleverification ()
   {
 	  
-	  logger = report.startTest("Title", "Title-verification");
+	  logger = report.startTest("Title", "Title-verification1");
 	  
-	  logger.log(LogStatus.INFO, "Title", "Title-verification"); 
+	  logger.log(LogStatus.INFO, "Title", "Title-verificationstarts"); 
 	  
 	String Actual_Title =  driver.getTitle();
 	System.out.println("print the title :"+Actual_Title);
 	  
-	  logger.log(LogStatus.INFO, "Title", "Title-verification"); 
-	  
+	  logger.log(LogStatus.INFO, "Title", "Title-verificationends"); 
 	  report.endTest(logger);	
+	  
   }
   
 	  
-	/*  @AfterMethod
+	 @AfterMethod
 		public void tearDown(ITestResult result) // capture screen shot for failed test case ITestResult is the interface by using screenshot results //
 		{
 		if(result.getStatus()==ITestResult.FAILURE)
@@ -84,16 +86,15 @@ public class LoginTest extends TestBaseforBrowserlauch
 		int rows = config.getrowcount(0); // getting values of row in excel and stored in a int rows //
 		System.out.println("print the number of rows : " +rows);
 		Object data [][] = new Object [rows][2]; // this is the syntax of 2d array and mention the row / col details from excel, here row is taken as rows . and 2 is how many col in the excel //
-		for (int i=0; i<rows;)
-		{
-						
+		for (int i=0; i<rows; i++)
+		{	
+			
 			data [i][0] = config.getdata(0, 1, 0); // finding 1st row value //
 		
 			data [i][1] = config.getdata(0, 1, 1);  // finding 1st col value // then for loop will execute up to the row available in the sheet
-			
+			if (i== rows)
 			break;
 		}
-		
 		return data;
 	}
 }

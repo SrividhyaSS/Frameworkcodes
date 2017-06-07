@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test with param" parallel="false">
+
+	<test name="Test Login in Chrome">
+
+		<parameter name="browser" value="chrome" />
+		<parameter name="username" value="academy" />
+		<parameter name="password" value="academy" />
+
+		<classes>
+			<class name="runs.Loginwithparameters" />
+			</classes>
+			</test> <!-- Test -->
+			</suite> <!-- Suite -->
+		
+		
+		
+	
+
+	

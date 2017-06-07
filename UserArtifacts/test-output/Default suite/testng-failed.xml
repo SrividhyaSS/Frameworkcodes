@@ -6,6 +6,7 @@
       <class name="runs.LoginTest">
         <methods>
           <include name="Loginintotheapplication"/>
+          <include name="titleverification"/>
         </methods>
       </class> <!-- runs.LoginTest -->
     </classes>
