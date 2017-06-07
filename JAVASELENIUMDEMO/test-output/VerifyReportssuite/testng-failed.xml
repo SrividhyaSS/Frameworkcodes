@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [VerifyReportssuite]">
+  <listeners>
+    <listener class-name="utility.ListenerinTestNG"/>
+  </listeners>
+  <test name="VerifyReportstest(failed)">
+    <classes>
+      <class name="testcases.VerifyLoginpagewithreport">
+        <methods>
+          <include name="TearDown"/>
+          <include name="LoginTestcase"/>
+          <include name="SetUP"/>
+        </methods>
+      </class> <!-- testcases.VerifyLoginpagewithreport -->
+    </classes>
+  </test> <!-- VerifyReportstest(failed) -->
+</suite> <!-- Failed suite [VerifyReportssuite] -->

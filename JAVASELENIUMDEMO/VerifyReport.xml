@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="VerifyReportssuite">
+    
+    <listeners>
+        
+        <listener class-name = "utility.ListenerinTestNG" />                   
+          
+    </listeners>
+    
+  <test name="VerifyReportstest">
+    <classes>
+      <class name="testcases.VerifyLoginpagewithreport"/>
+      
+
+    </classes>
+  </test> <!-- VerifyReportstest -->
+</suite> <!-- VerifyReportssuite -->
