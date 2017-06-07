@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Test with param]">
+  <parameter name="password" value="academy"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="password1" value="academy1"/>
+  <parameter name="username1" value="academy1"/>
+  <parameter name="username" value="academy"/>
+  <test name="Test with valid credential in Chrome(failed)">
+    <parameter name="password" value="academy"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="username" value="academy"/>
+    <classes>
+      <class name="runs.Loginwithparameters">
+        <methods>
+          <include name="logininvalid"/>
+          <include name="browserinitialisation"/>
+          <include name="browserinitialisation"/>
+        </methods>
+      </class> <!-- runs.Loginwithparameters -->
+    </classes>
+  </test> <!-- Test with valid credential in Chrome(failed) -->
+  <test name="Test with invalid credential in Chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="password1" value="academy1"/>
+    <parameter name="username1" value="academy1"/>
+    <classes>
+      <class name="runs.Loginwithparameters">
+        <methods>
+          <include name="login"/>
+          <include name="browserinitialisation"/>
+          <include name="browserinitialisation"/>
+        </methods>
+      </class> <!-- runs.Loginwithparameters -->
+    </classes>
+  </test> <!-- Test with invalid credential in Chrome(failed) -->
+</suite> <!-- Failed suite [Test with param] -->
