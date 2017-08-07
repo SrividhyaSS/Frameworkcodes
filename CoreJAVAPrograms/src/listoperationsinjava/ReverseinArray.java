@@ -18,6 +18,7 @@ public class ReverseinArray {
 		Collections.reverse(reverselist);
 		System.out.println("print the number after reverse list : "+reverselist);
 		
+		
 	}
 
 

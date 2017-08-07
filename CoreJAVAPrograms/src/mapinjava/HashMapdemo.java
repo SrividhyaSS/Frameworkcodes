@@ -23,8 +23,8 @@ public class HashMapdemo {
 		hm.put(null, "3333333333");
 		hm.put(null, "4444444444");
 		
-		System.out.println("print the vlaue :"+hm.get("Navin")); // print the latest values
-		System.out.println("print the value :"+hm.get(null)); // print the latest null values
+	//	System.out.println("print the vlaue :"+hm.get("Navin")); // print the latest values
+	//	System.out.println("print the value :"+hm.get(null)); // print the latest null values
 		
 		for(Map.Entry<String, String> m : hm.entrySet()) // map entry used to iterate / get the value of map with key value pair
 		{

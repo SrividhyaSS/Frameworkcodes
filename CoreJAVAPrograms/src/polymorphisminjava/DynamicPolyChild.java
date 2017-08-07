@@ -17,9 +17,22 @@ public class DynamicPolyChild extends DynamicPolyParentclass
 	public static void main(String[] args)
 	
 	{
-		DynamicPolyParentclass p1 = new DynamicPolyChild();
+	/*DynamicPolyParentclass p1 = new DynamicPolyChild(); // upcasting
+		p1.add();
+		p1.sub();*/
+		
+		
+		
+		DynamicPolyParentclass p1 = new DynamicPolyChild(); // down casting
+		DynamicPolyChild c = (DynamicPolyChild) p1;
+		c.add();
+		c.sub();
 		p1.add();
 		p1.sub();
+	
+	
+		
+	
 		
 		
 
