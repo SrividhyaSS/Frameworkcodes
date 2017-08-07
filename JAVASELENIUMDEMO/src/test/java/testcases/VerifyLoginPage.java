@@ -33,6 +33,7 @@ public class VerifyLoginPage
 	  LoginPage login = PageFactory.initElements(driver,LoginPage.class);
 	 login.loginApplication(Dataproviders.getExcel().getdata(0, 0, 0),Dataproviders.getExcel().getdata(0, 0, 1));
 	
+	
 	 	  
 	  
   }

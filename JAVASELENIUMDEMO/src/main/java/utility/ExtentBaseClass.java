@@ -6,7 +6,7 @@ import com.relevantcodes.extentreports.ExtentTest;
 public class ExtentBaseClass 
 {
 
-	 static ExtentReports report;
+	 static ExtentReports report; 
 	 static ExtentTest logger;
 
 public static ExtentReports GetExtent(){

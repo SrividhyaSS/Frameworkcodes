@@ -1,55 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="BROWSERSUITE" duration-ms="39441" started-at="2017-06-07T10:17:13Z" finished-at="2017-06-07T10:17:52Z">
+  <suite name="Default suite" duration-ms="22868" started-at="2017-06-22T09:26:44Z" finished-at="2017-06-22T09:27:07Z">
     <groups>
     </groups>
-    <test name="BrowserTestinchrome" duration-ms="28823" started-at="2017-06-07T10:17:13Z" finished-at="2017-06-07T10:17:41Z">
-      <class name="testcases.RunintwobrowserLogin">
-        <test-method status="PASS" signature="Browseropen(java.lang.String)[pri:0, instance:testcases.RunintwobrowserLogin@6fa38a]" name="Browseropen" is-config="true" duration-ms="23294" started-at="2017-06-07T15:47:13Z" finished-at="2017-06-07T15:47:36Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="22868" started-at="2017-06-22T09:26:44Z" finished-at="2017-06-22T09:27:07Z">
+      <class name="testcases.Log4jTestcase">
+        <test-method status="PASS" signature="SetUP()[pri:0, instance:testcases.Log4jTestcase@3108bc]" name="SetUP" is-config="true" duration-ms="15900" started-at="2017-06-22T14:56:44Z" finished-at="2017-06-22T14:57:00Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Browseropen -->
-        <test-method status="PASS" signature="Loginapp()[pri:0, instance:testcases.RunintwobrowserLogin@6fa38a]" name="Loginapp" duration-ms="5341" started-at="2017-06-07T15:47:36Z" finished-at="2017-06-07T15:47:41Z">
+        </test-method> <!-- SetUP -->
+        <test-method status="PASS" signature="LoginTestcase()[pri:0, instance:testcases.Log4jTestcase@3108bc]" name="LoginTestcase" duration-ms="4691" started-at="2017-06-22T14:57:00Z" finished-at="2017-06-22T14:57:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Loginapp -->
-        <test-method status="PASS" signature="Browserclose()[pri:0, instance:testcases.RunintwobrowserLogin@6fa38a]" name="Browserclose" is-config="true" duration-ms="173" started-at="2017-06-07T15:47:41Z" finished-at="2017-06-07T15:47:41Z">
+        </test-method> <!-- LoginTestcase -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:testcases.Log4jTestcase@3108bc]" name="TearDown" is-config="true" duration-ms="2264" started-at="2017-06-22T14:57:05Z" finished-at="2017-06-22T14:57:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Browserclose -->
-      </class> <!-- testcases.RunintwobrowserLogin -->
-    </test> <!-- BrowserTestinchrome -->
-    <test name="BrowserTestinIE" duration-ms="10531" started-at="2017-06-07T10:17:41Z" finished-at="2017-06-07T10:17:52Z">
-      <class name="testcases.RunintwobrowserLogin">
-        <test-method status="PASS" signature="Browseropen(java.lang.String)[pri:0, instance:testcases.RunintwobrowserLogin@1ef45e3]" name="Browseropen" is-config="true" duration-ms="8384" started-at="2017-06-07T15:47:41Z" finished-at="2017-06-07T15:47:50Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ie]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Browseropen -->
-        <test-method status="PASS" signature="Loginapp()[pri:0, instance:testcases.RunintwobrowserLogin@1ef45e3]" name="Loginapp" duration-ms="2115" started-at="2017-06-07T15:47:50Z" finished-at="2017-06-07T15:47:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Loginapp -->
-        <test-method status="PASS" signature="Browserclose()[pri:0, instance:testcases.RunintwobrowserLogin@1ef45e3]" name="Browserclose" is-config="true" duration-ms="30" started-at="2017-06-07T15:47:52Z" finished-at="2017-06-07T15:47:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Browserclose -->
-      </class> <!-- testcases.RunintwobrowserLogin -->
-    </test> <!-- BrowserTestinIE -->
-  </suite> <!-- BROWSERSUITE -->
+        </test-method> <!-- TearDown -->
+      </class> <!-- testcases.Log4jTestcase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
