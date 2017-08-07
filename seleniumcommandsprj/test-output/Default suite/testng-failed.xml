@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="configpackage.SimpleTestexe">
+      <class name="seleniumcommandspack.AutoComplete">
         <methods>
-          <include name="Verifypagetile"/>
+          <include name="Autocomplete"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- configpackage.SimpleTestexe -->
+      </class> <!-- seleniumcommandspack.AutoComplete -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

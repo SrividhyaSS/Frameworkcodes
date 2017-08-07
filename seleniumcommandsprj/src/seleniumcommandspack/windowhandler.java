@@ -1,5 +1,6 @@
 package seleniumcommandspack;
 
+import java.util.ArrayList;
 import java.util.Set;
 
 import org.openqa.selenium.By;
@@ -24,7 +25,22 @@ public class windowhandler {
 	
 	Set<String> handles =  driver.getWindowHandles();  // compare parent and child windows
 	
-	for(String windowHandle  : handles)
+	ArrayList <String> tabs = new ArrayList <>(handles); // convert set to array list 
+	
+	driver.switchTo().window(tabs.get(1)); // using index we can convert to window and perform action on that and close it //
+	
+	System.out.println(driver.getTitle());
+	
+	driver.close();
+	
+	driver.switchTo().window(tabs.get(0));
+	
+	driver.close();
+	
+	
+	
+	
+	/* for(String windowHandle  : handles)
     {
     if(!windowHandle.equals(parentWindow))
        {
@@ -34,8 +50,8 @@ public class windowhandler {
       driver.switchTo().window(parentWindow);
        }
 	}
-	}
+	} */
 }
 
-
+}
 

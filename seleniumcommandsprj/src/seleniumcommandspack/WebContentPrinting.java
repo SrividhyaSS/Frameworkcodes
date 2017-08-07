@@ -15,13 +15,14 @@ public class WebContentPrinting {
 		driver = new ChromeDriver();
 		driver.get("http://newtours.demoaut.com/");
 		driver.manage().window().maximize();
-		 WebElement element = driver.findElement(By.tagName("td"));
-		System.out.println(element.getText());
+		// WebElement element = driver.findElement(By.tagName("td"));
+		//System.out.println(element.getText());
 		
 		//WebElement element1 = driver.findElement(By.tagName("tr"));
-		//System.out.println(element1.getText());
-		//WebElement element2 = driver.findElement(By.tagName("tbody"));
-		// System.out.println(element2.getText());
+	//	System.out.println(element1.getText());
+		WebElement element2 = driver.findElement(By.tagName("tbody"));
+		System.out.println(element2.getText());
+		
 		//System.out.println(element2.getAttribute("innerHTML"));
 		
 	}

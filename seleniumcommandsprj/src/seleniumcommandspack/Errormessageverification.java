@@ -32,7 +32,7 @@ public class Errormessageverification {
 				
 		driver.findElement(By.xpath("//*[@id='index-ctr']/div[1]/div[2]/div[2]/div[2]")).click(); // click on student
 		
-		driver.findElement(By.xpath("html/body/div[1]/div[1]/div/div[2]/div/div[2]/form/div[4]/button")).click(); // click on sign in
+		driver.findElement(By.xpath("html/body/div[1]/div[1]/div/div[2]/div/div[2]/form/div[4]/button")).click(); // click on sign in (with out login)
 		
 		
 		String Actual_msg = driver.findElement(By.xpath("html/body/div[1]/div[1]/div/div[2]/div/div[2]/form/div[1]/div/span")).getText(); 
@@ -45,7 +45,7 @@ public class Errormessageverification {
 		
 		// Type 2
 		Assert.assertTrue(Actual_msg.contains(Expected_message));
-		System.out.println("Error message is verified - passed");			
+				System.out.println("Error message is verified - passed");			
 		
 		
 		
